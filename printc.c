@@ -10,7 +10,7 @@ int printc(va_list argument)
 	char cc = (char)va_arg(argument, int);
 	int count = 0;
 	
-	if(cc != NULL)
+	if(cc)
 	{
 		count = write(1, &cc, 1);
 		return (count);
