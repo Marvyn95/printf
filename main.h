@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+int _putchar(char c);
 int _printf(const char *format, ...);
 int (*checkformatspecifier(const char*))(va_list);
 
@@ -24,5 +25,8 @@ typedef struct func
 int printc(va_list argument);
 int prints(va_list argument);
 int printpercent(va_list argument);
+int printd(va_list argument);
+
+
 
 #endif

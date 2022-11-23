@@ -9,7 +9,14 @@
 int (*checkformatspecifier(const char *ch))(va_list)
 {
 	int i;
-	funcn varr[4] = {{"c", printc}, {"s", prints}, {"%", printpercent}, {NULL, NULL}};
+	funcn varr[6] = {
+		{"c", printc},
+		{"s", prints},
+		{"%", printpercent},
+		{"d", printd},
+		{"i", printd},
+		{NULL, NULL}
+	};
 
 	for (i = 0; varr[i].t != NULL; i++)
 	{
